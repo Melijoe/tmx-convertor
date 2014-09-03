@@ -326,7 +326,7 @@
 	}
 
 	if(isset($_FILES["file"])) {
-		$target_Path = "uploaded/";
+		$target_Path = "tmp/";
 		$target_Path = $target_Path.basename( $_FILES['userFile']['name'] );
 
 		move_uploaded_file( $_FILES['file']['tmp_name'], $target_Path . $_FILES['file']['name'] );
